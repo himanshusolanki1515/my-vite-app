@@ -1,6 +1,7 @@
 import { HERO_CONTENT } from "../constants";
-import profilepic from "../assets/Hero_img.jpg";
+import profilepic from "../assets/Hero.jpg";
 import { delay, motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -12,6 +13,23 @@ const container = (delay) => ({
 });
 
 const Hero = () => {
+  const [displayedText, setDisplayedText] = useState("");
+  const fullText = "Mern Stack Developer";
+
+  useEffect(() => {
+    let index = 0;
+    const interval = setInterval(() => {
+      if (index <= fullText.length) {
+        setDisplayedText(fullText.slice(0, index));
+        index++;
+      } else {
+        clearInterval(interval);
+      }
+    }, 100); // Adjust speed here, 100ms per character
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
       <div className="flex flex-wrap ">
@@ -26,14 +44,14 @@ const Hero = () => {
             >
               Himanshu Solanki
             </motion.h1>
-            <motion.span
+            <span
               variants={container(0.5)}
               animate="visible"
               initial="hidden"
               className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tighter text-transparent"
             >
-              Mern Stack Developer
-            </motion.span>
+              {displayedText}
+            </span>
             <motion.p
               variants={container(1)}
               animate="visible"

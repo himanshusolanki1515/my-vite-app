@@ -42,7 +42,14 @@ const About = () => {
           className="w-full lg:w-1/2"
         >
           <div className="flex justify-center lg:justify-start ">
-            <p className="my-2 max-w-xl py-6 mt-10">{ABOUT_TEXT}</p>
+            <p className="my-2 max-w-xl py-6 ">
+              {ABOUT_TEXT.split("\n").map((line, idx) => (
+                <span key={idx}>
+                  {line}
+                  <br />
+                </span>
+              ))}
+            </p>
           </div>
         </motion.div>
       </div>

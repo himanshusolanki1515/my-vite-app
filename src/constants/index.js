@@ -4,10 +4,17 @@ import project3 from "../assets/projects/Project_03.jpg";
 import project4 from "../assets/projects/Project_04.png";
 import project5 from "../assets/projects/Project_05.png";
 
-
 export const HERO_CONTENT = `Passionate Mern Stack developer with hands-on experience in building responsive and interactive web applications. Eager to contribute to innovative projects and expand my expertise in user interface design and development. Known for a collaborative approach, a keen problem-solving mindset, and a commitment to delivering high-quality work. Excited to apply my skills to challenging projects and continue growing in the dynamic field of web development.`;
 
-export const ABOUT_TEXT = `"I am a versatile full stack developer with 6 months of experience in building efficient, user-friendly web    applications. Skilled in technologies like HTML, CSS, Bootstrap, JavaScripts, React, Node.js, Express.js, MySQL, PostgreSQL, and MongoDB. I am passionate about solving complex problems and delivering high-quality solutions. With a strong foundation in both front-end and back-end development, I thrive in collaborative environments and continuously seek new challenges. Outside of work, I explore emerging technologies and actively contribute to open-source projects."`;
+export const ABOUT_TEXT = `Hello! I’m Himanshu Solanki, a Full Stack Web Developer based in London, UK, currently pursuing an MSc in Management with Project Management at BPP University. I’m passionate about building intuitive, high-performing web applications that make technology accessible and enjoyable.
+
+My journey began with a B.Tech in Computer Science and Engineering at S.N.P.I.T & R.C., India, where I developed a strong interest in coding and problem-solving. Since then, I’ve gained solid experience in front-end and back-end development, working with React.js, Node.js, Express, MongoDB, and PostgreSQL.
+
+During my internships at Lynx Softech Pvt. Ltd. and Toshal Infotech Pvt. Ltd., I built responsive interfaces, integrated APIs, and collaborated with teams to deliver seamless digital experiences—sharpening my skills in teamwork, adaptability, and clean coding.
+
+Now, through my master’s studies, I’m developing project management and leadership skills, combining technical expertise with strategic thinking to deliver projects efficiently.
+
+I’m always exploring new technologies, improving performance, and refining design. When I’m not coding, I enjoy learning about UI/UX, experimenting with creative ideas, and working on side projects that blend functionality with design.`;
 
 export const EXPERIENCES = [
   {
@@ -15,7 +22,7 @@ export const EXPERIENCES = [
     role: "Web Development",
     company: " LYNX SOFTECH PVT.LTD",
     description: `Developed and maintained web applications using React.js, and ASP.NET. Implemented RESTful APIs and integrated with PostgreSQL databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: [ "React.js", "ASP.NET Web API", "Node.js", "PostgreSQL"],
+    technologies: ["React.js", "ASP.NET Web API", "Node.js", "PostgreSQL"],
   },
   {
     year: "Jully - 2023",
@@ -23,7 +30,7 @@ export const EXPERIENCES = [
     company: "TOSHAL INFOTECH PVT.LTD",
     description: `Designed and developed user interfaces for web applications using HTML, CSS, Bootstrap and JavaScripts. Worked closely with backend developers to integrate frontend components with SQl Database. Implemented responsive designs and optimized frontend performance.`,
     technologies: ["HTML", "CSS", "BootStrap", "JavaScripts", "SQL"],
-  }
+  },
 ];
 
 export const PROJECTS = [
@@ -46,7 +53,7 @@ export const PROJECTS = [
     image: project3,
     description:
       "This React dynamic page showcases a user-friendly platform with sections for account creation, login, and data visualization.",
-    technologies: [ "React"],
+    technologies: ["React"],
   },
   {
     title: "Stock Market Analysis",
@@ -65,7 +72,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Shiv Nagar - 2 , Delad ,  Dist : Surat , Ta : Kamrej  ",
-  phoneNo: "+91 99135 87838 ",
-  email: "himanshusolanki1515.com",
+  address: "London  ",
+  phoneNo: "07900904315 ",
+  email: "himanshusolanki1506.com",
 };
